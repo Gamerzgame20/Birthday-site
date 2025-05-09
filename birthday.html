@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff8f0;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .wishes {
+      background-color: #ffe5ec;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .wish-card {
+      background: white;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .timeline {
+      border-left: 3px solid #f78ca2;
+      padding-left: 20px;
+    }
+    .timeline-event {
+      margin-bottom: 20px;
+    }
+    .footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #fcd5ce;
+      font-size: 0.9em;
+    }
+    .surprise-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #f67280;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .hidden-surprise {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Happy Birthday, Dipanshi! 🎉</h1>
+    <p>You’re not getting older, just more legendary!</p>
+  </header>
+
+  <section>
+    <h2>📸 Our Memories</h2>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="Memory 1">
+      <img src="photo2.jpg" alt="Memory 2">
+      <img src="photo3.jpg" alt="Memory 3">
+    </div>
+  </section>
+
+  <section class="wishes">
+    <h2>🎈 Birthday Wishes</h2>
+    <div class="wish-card">Happy birthday! You're the best! - Alex</div>
+    <div class="wish-card">Wishing you joy and laughter! - Sam</div>
+  </section>
+
+  <section>
+    <h2>🕒 Our Journey</h2>
+    <div class="timeline">
+      <div class="timeline-event"><strong>2019:</strong> We met at school.</div>
+      <div class="timeline-event"><strong>2021:</strong> That hilarious beach trip!</div>
+      <div class="timeline-event"><strong>2023:</strong> Your surprise party!</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🎁 Your Surprise</h2>
+    <button class="surprise-btn" onclick="document.getElementById('surprise').style.display='block';">Unlock Your Gift</button>
+    <div id="surprise" class="hidden-surprise">
+      <p>🎉 Here’s a special video just for you!</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    Made with ❤️ by [Your Name]
+  </footer>
+</body>
+</html>
